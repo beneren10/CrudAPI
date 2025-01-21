@@ -40,7 +40,7 @@ class Fruit {
         const updatedFruit = fruits.find(fruit => fruit.name.toLowerCase() === this.name.toLowerCase())
         if (updatedFruit) {
             updatedFruit.name = data.name 
-            updatedFruit.family = data.family
+            updatedFruit.id = data.id
             return new Fruit(updatedFruit)
         } else {
             throw Error("Fruit not found")
