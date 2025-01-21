@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const fruits = require("../controllers/fruits")
+const fruits = require("../controllers/router")
 
 router.get('/', fruits.index) // show all 
 router.get("/:name", fruits.show); // show one
